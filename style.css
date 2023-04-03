@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   height: 100vh;
   background-color:#111;
@@ -35,7 +39,7 @@ body{
   font-weight: 200;
   padding-left: 4px;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .navigation {
@@ -131,6 +135,8 @@ body{
 
 .hero{
   display: flex;
+  padding: 0 100px;
+  justify-content:space-evenly;
   margin: 20px;
 }
 
@@ -152,7 +158,6 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 35%;
 }
 
 .welcome h2{
