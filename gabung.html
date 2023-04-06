@@ -5,40 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
   </head>
   <body>
 
-    <nav class="wrapper">
+  <nav class="wrapper">
       <div class="brand">
         <div class="title">MuriaDev</div>
       </div>
       <ul class="navigation">
         <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="event.html">Event</a></li>
-        <li><a href="index.html">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li class="btn"><a href="gabung.html">Gabung Sekarang</a></li>
       </ul>
+
+      <!-- Top Navigation Menu -->
     </nav>
-    <div class="gabung">
-      <h2>Gabung Sekarang bersama kami</h2>
-      <p>Karena berapa alasan kami menggunakan discord sebagai wadah untuk
-        komunitas kami</p>
-      <div class="btn-gabung">
-        <img src="img/discord.png" alt="">
-        <a href="">Join discord</a>
+
+     <div class="topnav">
+      <a href="#home" class="title-top" >MuriaDev</a>
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="event.html">Event</a>
+        <a href="#contact">Contact</a>
+        <a href="gabung.html" class="btn-top">Gabung Sekarang</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
+
+      <!-- End smartphone / tablet look -->
     </div>
 
+    <div>
+      <h2 style="text-align: center; margin-top: 10%;">belum diperbarui</h2>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
 
 
-    <footer>
+    <footer style="margin-top: 100%;">
       <h2>Muria.<section>Dev</section></h2>
-      <p>Jl. Utara, Kulon, Gendangmanis, Kec. Bae, Kabupaten Kudus, Jawa Tegah
+      <p>Jl. Utara, Kulon, Gondangmanis, Kec. Bae, Kabupaten Kudus, Jawa Tegah
         59327</p>
       <p> Built with ❤️ by Muria Dev Team using html css only</p>
-      <p>&copy; 2023 Muria Dev</p>
+      <p>&copy;2023 Muria Dev</p>
     </footer>
   </body>
 </html>
