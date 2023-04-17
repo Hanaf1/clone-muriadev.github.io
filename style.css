@@ -107,7 +107,7 @@ body {
   font-size: 30px;
 }
 .topnav #myLinks .btn-top{
-   margin: auto;
+  margin: auto;
   text-align: center;
   width:50%;
   padding: 10px;
@@ -326,7 +326,7 @@ footer section {
 
 
 /* responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
   /* For tablet: */
 
@@ -363,6 +363,19 @@ footer section {
 
   .navigation {
     display: none;
+  }
+   /* hambuger menu */
+  .wrapper{
+    display: none;
+  }
+  .topnav{
+    display: block;
+  }
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
 
@@ -405,17 +418,5 @@ footer section {
     justify-content: start;
   }
 
-  /* hambuger menu */
-  .wrapper{
-    display: none;
-  }
-  .topnav{
-    display: block;
-  }
-  .topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+ 
 }
